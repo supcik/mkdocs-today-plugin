@@ -1,0 +1,20 @@
+site_name: Today Plugin Test
+site_description: Test for Today Plugin
+docs_dir: docs
+theme: readthedocs
+
+nav:
+  - Main: index.md
+
+copyright: "&copy; {{ today.year }} Jacques Supcik"
+
+extra:
+  test: "Today is {{ today.strftime('%Y-%m-%d') }}"
+
+plugins:
+  - search
+  - today: # Has to be before macros
+      items:
+        - extra.test
+        - copyright
+  - macros

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mkdocs-plugin-today"
+version = "0.1.0"
+description = ""
+authors = ["Jacques Supcik <jacques.supcik@hefr.ch>"]
+license = "Apache-2"
+readme = "README.md"
+packages = [{ include = "today" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.4.3"
+jinja2 = "^3.1.2"
+mkdocs-material = { version = "^9.1.15", optional = true }
+mkdocs-macros-plugin = { version = "^1.0.1", optional = true }
+
+[tool.poetry.extras]
+test = ["mkdocs-material", "mkdocs-macros-plugin"]
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins]
+
+[tool.poetry.plugins."mkdocs.plugins"]
+today = "today.plugin:TodayPlugin"
