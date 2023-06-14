@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mkdocs-plugin-today"
+name = "mkdocs-today-plugin"
 version = "0.1.0"
 description = ""
 authors = ["Jacques Supcik <jacques.supcik@hefr.ch>"]

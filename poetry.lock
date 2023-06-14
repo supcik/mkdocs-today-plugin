@@ -40,6 +40,7 @@ mypy-extensions = ">=0.4.3"
 packaging = ">=22.0"
 pathspec = ">=0.9.0"
 platformdirs = ">=2"
+tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
 colorama = ["colorama (>=0.4.3)"]
@@ -675,6 +676,17 @@ files = [
 tests = ["pytest", "pytest-cov"]
 
 [[package]]
+name = "tomli"
+version = "2.0.1"
+description = "A lil' TOML parser"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
+    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
+]
+
+[[package]]
 name = "urllib3"
 version = "2.0.3"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -735,5 +747,5 @@ test = ["mkdocs-macros-plugin", "mkdocs-material"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.11"
-content-hash = "5dd2083b2ac435b60009c9d5eb9a65b40fb7ec03beba9243c49754c5ca104f6a"
+python-versions = "^3.10"
+content-hash = "31932a1eb91a4b61a297efa09e82eb386291247be332aebb2a35401e59ad9ea8"

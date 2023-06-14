@@ -1,4 +1,4 @@
-# mkdocs-plugin-today
+# mkdocs-today-plugin
 
 This plugin adds a `today` entry (of type datetime.date) to the config object.
 The plugin can also be used to patch configuration items with a date value. The
