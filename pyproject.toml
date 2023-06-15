@@ -28,6 +28,7 @@ test = ["mkdocs-material", "mkdocs-macros-plugin"]
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
 pylint = "^2.17.4"
+isort = "^5.12.0"
 
 [build-system]
 requires = ["poetry-core"]
